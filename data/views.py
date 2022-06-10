@@ -8,6 +8,12 @@ class GetItems(generics.ListAPIView):
     serializer_class = ItemSerializer
     queryset = Item.objects.all()
 
+
+class GetMonths(generics.ListAPIView):
+    serializer_class = MonthSerializer
+    queryset = Month.objects.all()
+
+
 class GetItem(generics.RetrieveAPIView):
     serializer_class = ItemSerializer
 
